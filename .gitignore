@@ -1,0 +1,4 @@
+# Don't include constants hereå
+*.respec-skill.md
+respec-skill-configs/
+*.skill

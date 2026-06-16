@@ -1,0 +1,33 @@
+<!--
+  Minimal ReSpec source fragment illustrating the idioms this skill relies on.
+  This is a fragment, not a full document. Note: section nesting drives the
+  heading hierarchy; ids are stable permalinks; <dfn> defines, bare <a>
+  references, data-cite links external specs.
+-->
+
+<section id="terminology" class="informative">
+  <h2>Terminology</h2>
+  <p>
+    An <dfn data-lt="issuers">issuer</dfn> is the party that signs a
+    credential. A <dfn data-lt="relying parties|RP">relying party</dfn>
+    validates credentials presented to it.
+  </p>
+</section>
+
+<section id="issuance">
+  <h2>Issuance</h2>
+  <p>
+    The <a>issuer</a> generates a credential and signs it. The signing
+    procedure follows the JOSE conventions defined in
+    <a data-cite="RFC7515#section-5">RFC 7515</a>.
+  </p>
+
+  <section id="issuance-flow">
+    <h3>Issuance flow</h3>
+    <ol class="algorithm">
+      <li>The <a>relying party</a> requests a credential.</li>
+      <li>The <a>issuer</a> MUST authenticate the request.</li>
+      <li>The <a>issuer</a> returns the signed credential.</li>
+    </ol>
+  </section>
+</section>
