@@ -1,5 +1,7 @@
 # respec-editor
 
+*English | [日本語](README.ja.md)*
+
 A [Claude Code](https://claude.com/claude-code) **skill** for safely editing
 [W3C ReSpec](https://respec.org/)-format HTML specification documents and
 preparing pull requests against them.
@@ -46,8 +48,19 @@ for the template to fill in.
 
 ## Installation
 
-This repository **is** the skill directory (its `SKILL.md` lives at the root).
-Install it where Claude Code looks for skills.
+Pick whichever fits your workflow.
+
+### As a plugin via the marketplace (recommended)
+
+In Claude Code:
+
+```
+/plugin marketplace add shigeya/respec-editor
+/plugin install respec-editor@respec-skills
+```
+
+Update later with `/plugin marketplace update respec-skills`. Installed this way,
+the skill is namespaced as `respec-editor:respec-editor`.
 
 ### As a personal skill (available in every project)
 
@@ -87,6 +100,8 @@ guessing your repository's conventions.
 
 ```
 SKILL.md                              The skill itself (runtime instructions)
+.claude-plugin/plugin.json            Plugin manifest (for marketplace install)
+.claude-plugin/marketplace.json       Marketplace listing this plugin
 SETUP.md                              Operator notes: central store + symlink setup
 reference/respec-markup.md            ReSpec markup rules (sections, dfn, data-cite, ...)
 reference/respec-config.md            respecConfig fields and the edit/do-not-edit split

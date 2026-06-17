@@ -1,0 +1,12 @@
+{
+  "name": "respec-editor",
+  "description": "Edit W3C ReSpec-format HTML specification documents and prepare pull requests against them.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shigeya Suzuki",
+    "email": "shigeya@shigeya.org"
+  },
+  "homepage": "https://github.com/shigeya/respec-editor",
+  "repository": "https://github.com/shigeya/respec-editor",
+  "license": "MIT"
+}
