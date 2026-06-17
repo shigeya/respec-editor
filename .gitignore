@@ -1,4 +1,6 @@
-# Don't include constants hereå
+# Never commit repository-specific config (the per-spec layer).
+# It lives centrally and is symlinked into spec repos as .respec-skill.md.
+.respec-skill.md
 *.respec-skill.md
 respec-skill-configs/
 *.skill
